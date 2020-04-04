@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths fa-events-icons-ready gr__alloutdev_bitbucket_io" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="template_files/profile.jpg">
+  <title>React - Freelancers and Agencies One Page Portfolio Template</title>
+  <meta name="description" content="">
+  <meta name="author" content="Syed Danial Munsif">
+  <meta name="keywords" content="React, Landing page, Portfolio template, Bootstrap template, Responsive html5 template">
+  <link rel="stylesheet" href="template_files/styles.css" id="css-main">
+  <script src="template_files/e65fc10c49.js"></script><link href="template_files/e65fc10c49.css" media="all" rel="stylesheet">
+
+  <!-- Remove style switcher css -->
+  <style>
+    .palette-wrapper {
+      background-color: #fff;
+      border: 2px solid #39b54a;
+      border-left: 0px;
+      left: 0px;
+      padding: 15px;
+      position: fixed;
+      top: 200px;
+      -webkit-transition: margin 0.2s linear;
+      -moz-transition: margin 0.2s linear;
+      -o-transition: margin 0.2s linear;
+      transition: margin 0.2s linear;
+      width: 180px;
+      z-index: 999999
+    }
+
+    .palette-wrapper select {
+      display: block;
+      margin-bottom: 15px;
+      width: 100%
+    }
+
+    .palette-closed {
+      margin-left: -180px
+    }
+
+    h2.palette-title,
+    .block-content h3.palette-title {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0px 0px 10px 0px;
+      padding-bottom: 5px;
+      text-transform: uppercase
+    }
+
+    .palette-colors {
+      margin: 0px;
+      padding: 0px
+    }
+
+    .palette-colors li {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      display: block;
+      float: left;
+      list-style: none;
+      margin-bottom: 11px;
+      margin-right: 11px
+    }
+
+    .palette-colors li:nth-child(4n) {
+      margin-right: 0px
+    }
+
+    .palette-colors a {
+      background-color: red;
+      display: block;
+      height: 24px;
+      margin: 1px;
+      width: 24px
+    }
+
+    .palette-toggle {
+      background-color: black;
+      border: 2px solid black;
+      border-left: 0px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
+      position: absolute;
+      right: -42px;
+      text-align: center;
+      text-transform: uppercase;
+      top: -2px;
+      width: 40px
+    }
+
+    .palette-toggle .palette-toggle-inner {
+      border: 1px solid #fff;
+      height: 100px;
+      padding: 66px 0px 0px 0px
+    }
+
+    .palette-toggle span {
+      display: block;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      white-space: nowrap
+    }
+
+    .palette-toggle i {
+      display: inline;
+      margin-right: 8px
+    }
+
+    .palette-color-green a {
+      background-color: #07cb79;
+    }
+
+    .palette-color-red a {
+      background-color: #e83b35;
+    }
+
+    .palette-color-cyan a {
+      background-color: #07aaf5;
+    }
+
+    .palette-color-purple a {
+      background-color: #8e45ae;
+    }
+    .palette-color-gradient a {
+      background-image: linear-gradient(to right, rgb(255, 195, 113) 0%, rgb(255, 95, 109) 100%);
+    }
+  </style>
+  <!-- Remove Style switcher css end -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50" data-gr-c-s-loaded="true">
+      <!-- color options -->
+      <div class="palette-wrapper palette-closed">
+        <div class="palette-inner">
+          <div class="palette-toggle">
+            <div class="palette-toggle-inner">
+              <span><i class="fa fa-cog fa-spin"></i>Options</span>
+            </div>
+          </div>
+          <h2 class="palette-title">Color Variant</h2>
+          <ul class="palette-colors clearfix">
+            <li class="palette-color-red"><a href="https://alloutdev.bitbucket.io/react-portfolio-template/css/red.min.css"></a></li>
+            <li class="palette-color-purple"><a href="https://alloutdev.bitbucket.io/react-portfolio-template/css/purple.min.css"></a></li>
+            <li class="palette-color-cyan"><a href="https://alloutdev.bitbucket.io/react-portfolio-template/css/cyan.min.css"></a></li>
+            <li class="palette-color-green"><a href="https://alloutdev.bitbucket.io/react-portfolio-template/css/green.min.css"></a></li>
+            <br>
+            <h2 class="palette-title">Gradient</h2>
+            <li class="palette-color-gradient"><a href="https://alloutdev.bitbucket.io/react-portfolio-template/css/gradient.min.css"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- color options end -->
+      <!-- preloader -->
+      <div id="preloader" style="display: none;">
+        <div class="sk-wave" style="display: none;">
+          <div class="sk-rect sk-rect1"></div>
+          <div class="sk-rect sk-rect2"></div>
+          <div class="sk-rect sk-rect3"></div>
+          <div class="sk-rect sk-rect4"></div>
+          <div class="sk-rect sk-rect5"></div>
+        </div>
+      </div>
+      <!-- preloader end -->
+      <header class="container-fluid sdm-bg" id="home">
+        <div class="row">
+          <div class="overlay"></div>
+          <!-- main menu -->
+          <ul class="nav nav-pills menu-center margin-top-30 scroll-nav">
+            <li role="presentation" class="active"><a href="#home" class="sdm-active"><i class="fa fa-home"></i></a></li>
+            <li role="presentation"><a href="#portfolio">Portfolio</a></li>
+            <li role="presentation"><a href="#reviews">Reviews</a></li>
+            <li role="presentation"><a href="#about_me">About</a></li>
+            <li role="presentation"><a href="#expertness">Services</a></li>
+            <li role="presentation"><a href="#contact_me">Contact</a></li>
+          </ul>
+          <!-- main menu end -->
+          <img src="template_files/profile.jpg" class="margin-top-76 img-circle center-block profile_picture" alt="profile picture">
+          <h1 class="text-capitalize text-center">Jeanetter benson</h1>
+          <h3 class="text-capitalize text-center">UX/UI designer</h3>
+          <hr>
+          <div class="text-center margin-bottom-135">
+            <ul class="social-networks spin-icon">
+              <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
+              <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
+              <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
+              <li><a href="https://pinterest.com/" class="icon-pinterest">Pinterest</a></li>
+              <li><a href="https://instagram.com/" class="icon-instagram">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="container position-relative" id="portfolio">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1 position-absolute">
+            <div class="text-center filter-btns">
+              <!-- filter btn -->
+              <ul class="nav nav-pills">
+                <li role="presentation">
+                  <a href="javascript:void(0)" id="all" class="btn programs-btn-active" data-mixitup-control="" data-filter="all">All</a>
+                </li>
+                <li role="presentation">
+                  <a href="javascript:void(0)" class="btn" data-mixitup-control="" data-filter=".web">Web</a>
+                </li>
+                <li role="presentation">
+                  <a href="javascript:void(0)" class="btn" data-mixitup-control="" data-filter=".android">Android</a>
+                </li>
+                <li role="presentation">
+                  <a href="javascript:void(0)" class="btn" data-mixitup-control="" data-filter=".ios">iOS</a>
+                </li>
+                <li role="presentation">
+                  <a href="javascript:void(0)" class="btn" data-mixitup-control="" data-filter=".desktop">Desktop</a>
+                </li>
+              </ul>
+              <!-- filter btn end-->
+            </div>
+            <!-- mixitup container -->
+            <div class="row" id="mix-wrapper">
+              <div id="effect-5">
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target web" data-order="1">
+                  <figure>
+                    <img src="template_files/port1.jpg" alt="">
+                    <figcaption>
+                      <a href="#" data-toggle="modal" data-target="#myModal">
+                        <h3>Mojo Web App redesign concept</h3>
+                        <hr>                      
+                        <p>Branding , Development</p>
+                      </a>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target web" data-order="2">
+                  <figure>
+                    <img src="template_files/port2.jpg" alt="">
+                    <figcaption>
+                      <a href="#" data-toggle="modal" data-target="#myModal">
+                        <h3>Mojo Web App redesign concept</h3>
+                        <hr>
+                        <p>Branding , Development</p>                      
+                      </a>                      
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target android" data-order="3">
+                  <figure>
+                    <img src="template_files/port1.jpg" alt="">
+                    <figcaption>
+                      <a href="#" data-toggle="modal" data-target="#myModal">
+                        <h3>Mojo Web App redesign concept</h3>
+                        <hr> 
+                        <p>Branding , Development</p>                     
+                      </a>                      
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target ios" data-order="4">
+                  <figure target="_blank">
+                    <img src="template_files/port4.jpg" alt="">
+                    <figcaption>
+                      <a href="#" data-toggle="modal" data-target="#myModal">
+                        <h3>Mojo Web App redesign concept</h3>
+                        <hr>
+                        <p>Branding , Development</p>                      
+                      </a>                      
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target ios" data-order="5">
+                  <figure>
+                    <img src="template_files/port5.jpg" alt="">
+                    <figcaption>
+                      <a href="#" class="porto" data-toggle="modal" data-target="#myModal">
+                        <h3>Mojo Web App redesign concept</h3>
+                        <hr> 
+                        <p>Branding , Development</p>                     
+                      </a>
+
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target desktop" data-order="6">
+                  <figure>
+                    <img src="template_files/port6.jpg" alt="">
+                    <figcaption>
+                      <a href="#" data-toggle="modal" data-target="#myModal">
+                        <h3>Mojo Web App redesign concept</h3>
+                        <hr> 
+                        <p>Branding , Development</p>                     
+                      </a>                      
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="col-sm-12 text-center">
+
+                <a href="#" class="btn btn-orange">Load More</a>
+              </div>
+
+            </div>
+            <!-- mixitup container end -->
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid sdm-bg" id="reviews">
+        <div class="row">
+          <div class="overlay"></div>
+          <!-- testimonials slider -->
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12" data-wow-delay="0.2s">
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                  <!-- Bottom Carousel Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="template_files/face1.jpg" alt="">
+                    </li>
+                    <li data-target="#quote-carousel" data-slide-to="1" class="active"><img class="img-responsive" src="template_files/face2.jpg" alt="">
+                    </li>
+                    <li data-target="#quote-carousel" data-slide-to="2" class=""><img class="img-responsive" src="template_files/girl_face.png" alt="">
+                    </li>
+                  </ol>
+
+                  <!-- Carousel Slides / Quotes -->
+                  <div class="carousel-inner text-center">
+
+                    <!-- Quote 1 -->
+                    <div class="item active left">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-8 col-sm-offset-2">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+ laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+pariatur. !</p>
+                            <small>Danial Munsif</small>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- Quote 2 -->
+                    <div class="item next left">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-8 col-sm-offset-2">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+ laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+pariatur. </p>
+                            <small>Danial Munsif</small>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <!-- Quote 3 -->
+                    <div class="item">
+                      <blockquote>
+                        <div class="row">
+                          <div class="col-sm-8 col-sm-offset-2">
+
+                            <p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+ laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+pariatur. .</p>
+                            <small>Danial Munsif</small>
+                          </div>
+                        </div>
+                      </blockquote>
+                    </div>
+                  </div>
+
+                  <!-- Carousel Buttons Next/Prev -->
+                  <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-angle-left fa-2x"></i></a>
+                  <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-angle-right fa-2x"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- testimonials slider end -->
+        </div>
+      </section>
+      <section class="container" id="about_me">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <div class="row">
+              <div class="col-md-5 col-sm-4 col-xs-12">
+                <h3><i class="fa fa-user"></i>About me</h3>
+                <div class="block">
+                  <p>
+                    I am a passionate User Experience and User Interface
+ Designer who has been working in this field for more than 3 years now. 
+                  </p>
+                  <p>
+                    You have an idea, you need someone to bring it ot 
+life. Or you already have a product that needs to be redined to meet the
+ demand of 2017 users!. This is where i come in! With my knowledge and 
+creativity. I can take your idea, your product to the next level. Let's 
+have a chat and discuss your idea!
+                  </p>                  
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-xs-6">
+                <h3><i class="fa fa-building"></i>Work history</h3>
+                <div class="block">
+                  <h4>Product Manager</h4>
+                  <ul class="icon-list">
+                    <li><i class="fa fa-building"></i> Dropbox</li>
+                    <li><i class="fa fa-clock-o"></i> 2017-Present</li>
+                  </ul>
+                </div> 
+                <div class="block">
+                  <h4> Senior UX Designer</h4>
+                  <ul class="icon-list">
+                    <li><i class="fa fa-building"></i> Dropbox</li>
+                    <li><i class="fa fa-clock-o"></i> 2017-Present</li>
+                  </ul>
+                </div> 
+                <div class="block">
+                  <h4>UX Design Intern</h4>
+                  <ul class="icon-list">
+                    <li><i class="fa fa-building"></i> Dropbox</li>
+                    <li><i class="fa fa-clock-o"></i> 2017-Present</li>
+                  </ul>
+                </div> 
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-6">
+                <h3><i class="fa fa-graduation-cap"></i>Education</h3>
+                <div class="block">
+                  <h4>User experience Design</h4>
+                  <ul class="icon-list">
+                    <li><i class="fa fa-book"></i> University of Punjab</li>
+                    <li><i class="fa fa-clock-o"></i> 2017-Present</li>
+                  </ul>
+                </div> 
+                <div class="block">
+                  <h4>User experience Design</h4>
+                  <ul class="icon-list">
+                    <li><i class="fa fa-book"></i> University of Punjab</li>
+                    <li><i class="fa fa-clock-o"></i> 2017-Present</li>
+                  </ul>
+                </div> 
+                <div class="block">
+                  <h4>User experience Design</h4>
+                  <ul class="icon-list">
+                    <li><i class="fa fa-book"></i> University of Punjab</li>
+                    <li><i class="fa fa-clock-o"></i> 2017-Present</li>
+                  </ul>
+                </div> 
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid sdm-bg" id="expertness">
+        <div class="row">
+          <div class="overlay"></div>
+          <div class="col-sm-12">
+            <h3 class="text-center"><i class="fa fa-bookmark"></i>What I Do</h3>
+          </div>
+        </div>
+        <section class="container">
+          <div class="row">
+            <div class="col-sm-4 col-xs-6">
+              <div class="block">
+                <i class="fa fa-android fa-3x"></i>
+                <h4 class="text-uppercase">Mobile Apps</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit 
+voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div> 
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <div class="block">
+                <i class="fa fa-code fa-3x"></i>
+                <h4 class="text-uppercase">web design</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit 
+voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div> 
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <div class="block">
+                <i class="fa fa-magic fa-3x"></i>
+                <h4 class="text-uppercase">UX/UI Design</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit 
+voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div> 
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <div class="block">
+                <i class="fa fa-camera fa-3x"></i>
+                <h4 class="text-uppercase">Photography</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit 
+voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div> 
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <div class="block">
+                <i class="fa fa-lightbulb-o fa-3x"></i>
+                <h4 class="text-uppercase">brand identity</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit 
+voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div> 
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <div class="block">
+                <i class="fa fa-user-secret fa-3x"></i>
+                <h4 class="text-uppercase">analytics</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit 
+voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                </p>
+              </div> 
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="container" id="hire_me"> 
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h3>Need Any Help?</h3>
+            <h4><i class="fa fa-thumbs-up fa-2x"></i> I am available for freelance hire</h4>
+
+            <nav class="cl-effect-2">
+              <a href="#contact_me"><span data-hover="Hire Me">Hire Me</span></a>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid sdm-bg" id="contact_me">
+        <div class="row">
+          <div class="overlay"></div>
+          <div class="col-sm-12 text-center text-capitalize">
+            <h3>want to discuss a project?</h3>
+            <h4>just drop a message below and i'll get in touch!</h4>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <section class="col-sm-10 col-sm-offset-1">
+
+            <div class="row text-center">
+              <div class="col-sm-4 col-xs-12">
+                <div class="block">
+                  <i class="fa fa-envelope fa-2x"></i>
+                  <h4 class="text-uppercase">Queries</h4>
+                  <ul class="list-unstyled">
+                    <li>info@mywebsite.com</li>
+                    <li>contact@gmail.com</li>
+                  </ul>
+                </div> 
+              </div>
+              <div class="col-sm-4 col-xs-6">
+                <div class="block">
+                  <i class="fa fa-phone fa-2x"></i>
+                  <h4 class="text-uppercase">Call Us</h4>
+                  <ul class="list-unstyled">
+                    <li>info@mywebsite.com</li>
+                    <li>contact@gmail.com</li>
+                  </ul>
+                </div> 
+              </div>
+              <div class="col-sm-4 col-xs-6">
+                <div class="block">
+                  <i class="fa fa-home fa-2x"></i>
+                  <h4 class="text-uppercase">Office</h4>
+                  <ul class="list-unstyled">
+                    <li>info@mywebsite.com</li>
+                    <li>contact@gmail.com</li>
+                  </ul>
+                </div> 
+              </div>
+            </div>
+            <form action="" class="row">
+              <div class="col-sm-6 col-xs-12">
+               <div class="form-group">
+                 <label for="your_name">Your Name</label>
+                 <input type="text" class="form-control" id="your_name" placeholder="Write Your Name" data-kwimpalastatus="alive" data-kwimpalaid="1586026304676-0">
+               <span style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; background-color: initial; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjUgNS4yODgxMUMxMy41IDUuMTkzNzYgMTMuNDA1NyA1LjA5OTQxIDEzLjI3MzYgNS4wNjE2NkwxMS42ODg2IDQuNDc2NjZDMTEuNDI0NCA0LjM2MzQxIDExLjEyMjUgNC40OTU1MSAxMS4xMjI1IDQuNjg0MjZWMTEuNTgxN0MxMS4xMjk5IDExLjYzNTUgMTEuMTUxMiAxMS42ODY0IDExLjE4NDMgMTEuNzI5NEMxMS4yMTc0IDExLjc3MjQgMTEuMjYxMSAxMS44MDYxIDExLjMxMTIgMTEuODI3MUwxMi45MzQxIDEyLjQxMjFDMTMuMTc5NCAxMi41MDY0IDEzLjUwMDIgMTIuMzc0MyAxMy41MDAyIDEyLjE2NjdMMTMuNSA1LjI4ODExWk05LjQ3OTQyIDEwLjU0MzdDOS40Nzk0MiAxMC40NDk0IDkuMzg1MDcgMTAuMzU1IDkuMjUyOTcgMTAuMzE3M0w3LjY2Nzk3IDkuNzMyMjZDNy40MDM4MiA5LjYxOTAxIDcuMTAxODcgOS43NTExMSA3LjEwMTg3IDkuOTM5ODFWMTQuMjQyNEM3LjEwOTMxIDE0LjI5NjEgNy4xMzA2MiAxNC4zNDcgNy4xNjM3MSAxNC4zOUM3LjE5NjggMTQuNDMzMSA3LjI0MDUyIDE0LjQ2NjcgNy4yOTA1NyAxNC40ODc3TDguOTEzNDcgMTUuMDcyN0M5LjE1ODc3IDE1LjE2NzEgOS40Nzk1NyAxNS4wMzUgOS40Nzk1NyAxNC44Mjc0TDkuNDc5NDIgMTAuNTQzN1pNOS40Nzk0MiAxLjc0OTc2QzkuNDc5NDIgMS42NTU0MSA5LjM4NTA3IDEuNTYxMDYgOS4yNTI5NyAxLjUyMzMxTDcuNjY3OTcgMC45MzgzMTFDNy40MDM4MiAwLjgyNTA2MSA3LjEwMTg3IDAuOTU3MTYxIDcuMTAxODcgMS4xNDU4NlY1LjQ0ODQxQzcuMTA5MzEgNS41MDIxNyA3LjEzMDYyIDUuNTUzMDcgNy4xNjM3MSA1LjU5NjA5QzcuMTk2OCA1LjYzOTEyIDcuMjQwNTIgNS42NzI3OCA3LjI5MDU3IDUuNjkzNzZMOC45MTM0NyA2LjI3ODc2QzkuMTU4NzcgNi4zNzMxMSA5LjQ3OTU3IDYuMjQxMDEgOS40Nzk1NyA2LjAzMzQxTDkuNDc5NDIgMS43NDk3NlpNNS40NzkxNyAxLjQxOTc2QzUuNDc5MTcgMS4zMjUzNiA1LjM4NDgyIDEuMjMxMDEgNS4yNTI3MiAxLjE5MzMxTDMuNjY3NzIgMC42MDgzMTFDMy40MDM1NyAwLjQ5NTA2MSAzLjEwMTYyIDAuNjI3MTYxIDMuMTAxNjIgMC44MTU4NjFWMTQuNTkxNEMzLjEwOTA1IDE0LjY0NTIgMy4xMzAzNiAxNC42OTYxIDMuMTYzNDUgMTQuNzM5MUMzLjE5NjU0IDE0Ljc4MjEgMy4yNDAyNyAxNC44MTU3IDMuMjkwMzIgMTQuODM2N0w0LjkxMzIyIDE1LjQyMTdDNS4xNTg1MiAxNS41MTYxIDUuNDc5MzIgMTUuMzg0IDUuNDc5MzIgMTUuMTc2NEw1LjQ3OTE3IDEuNDE5NzZaIiBmaWxsPSIjMEU2NDc2Ii8+Cjwvc3ZnPgo=&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: initial; background-clip: initial; background-origin: initial; background-size: contain; background-blend-mode: initial; border: medium none; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: inline; position: absolute; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transition: initial; animation: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; -moz-appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: 1; box-shadow: initial; clip: initial; filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; visibility: visible; writing-mode: initial; text-orientation: initial; color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; -moz-context-properties: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; -moz-tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; -moz-control-character-visibility: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; scrollbar-color: initial; list-style: initial; quotes: initial; -moz-image-region: initial; margin: initial; scroll-margin: initial; outline: initial; -moz-outline-radius: initial; outline-offset: initial; padding: initial; scroll-padding: initial; top: 34px; right: initial; bottom: initial; left: 761px; z-index: auto; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: 16px; min-width: 16px; max-width: initial; height: 16px; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"></span></div>
+               <div class="form-group">
+                <label for="your_email">Password</label>
+                <input type="email" class="form-control" id="your_email" placeholder="Enter Your Email" data-kwimpalastatus="alive" data-kwimpalaid="1586026304676-1">
+              <span style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; background-color: initial; background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjUgNS4yODgxMUMxMy41IDUuMTkzNzYgMTMuNDA1NyA1LjA5OTQxIDEzLjI3MzYgNS4wNjE2NkwxMS42ODg2IDQuNDc2NjZDMTEuNDI0NCA0LjM2MzQxIDExLjEyMjUgNC40OTU1MSAxMS4xMjI1IDQuNjg0MjZWMTEuNTgxN0MxMS4xMjk5IDExLjYzNTUgMTEuMTUxMiAxMS42ODY0IDExLjE4NDMgMTEuNzI5NEMxMS4yMTc0IDExLjc3MjQgMTEuMjYxMSAxMS44MDYxIDExLjMxMTIgMTEuODI3MUwxMi45MzQxIDEyLjQxMjFDMTMuMTc5NCAxMi41MDY0IDEzLjUwMDIgMTIuMzc0MyAxMy41MDAyIDEyLjE2NjdMMTMuNSA1LjI4ODExWk05LjQ3OTQyIDEwLjU0MzdDOS40Nzk0MiAxMC40NDk0IDkuMzg1MDcgMTAuMzU1IDkuMjUyOTcgMTAuMzE3M0w3LjY2Nzk3IDkuNzMyMjZDNy40MDM4MiA5LjYxOTAxIDcuMTAxODcgOS43NTExMSA3LjEwMTg3IDkuOTM5ODFWMTQuMjQyNEM3LjEwOTMxIDE0LjI5NjEgNy4xMzA2MiAxNC4zNDcgNy4xNjM3MSAxNC4zOUM3LjE5NjggMTQuNDMzMSA3LjI0MDUyIDE0LjQ2NjcgNy4yOTA1NyAxNC40ODc3TDguOTEzNDcgMTUuMDcyN0M5LjE1ODc3IDE1LjE2NzEgOS40Nzk1NyAxNS4wMzUgOS40Nzk1NyAxNC44Mjc0TDkuNDc5NDIgMTAuNTQzN1pNOS40Nzk0MiAxLjc0OTc2QzkuNDc5NDIgMS42NTU0MSA5LjM4NTA3IDEuNTYxMDYgOS4yNTI5NyAxLjUyMzMxTDcuNjY3OTcgMC45MzgzMTFDNy40MDM4MiAwLjgyNTA2MSA3LjEwMTg3IDAuOTU3MTYxIDcuMTAxODcgMS4xNDU4NlY1LjQ0ODQxQzcuMTA5MzEgNS41MDIxNyA3LjEzMDYyIDUuNTUzMDcgNy4xNjM3MSA1LjU5NjA5QzcuMTk2OCA1LjYzOTEyIDcuMjQwNTIgNS42NzI3OCA3LjI5MDU3IDUuNjkzNzZMOC45MTM0NyA2LjI3ODc2QzkuMTU4NzcgNi4zNzMxMSA5LjQ3OTU3IDYuMjQxMDEgOS40Nzk1NyA2LjAzMzQxTDkuNDc5NDIgMS43NDk3NlpNNS40NzkxNyAxLjQxOTc2QzUuNDc5MTcgMS4zMjUzNiA1LjM4NDgyIDEuMjMxMDEgNS4yNTI3MiAxLjE5MzMxTDMuNjY3NzIgMC42MDgzMTFDMy40MDM1NyAwLjQ5NTA2MSAzLjEwMTYyIDAuNjI3MTYxIDMuMTAxNjIgMC44MTU4NjFWMTQuNTkxNEMzLjEwOTA1IDE0LjY0NTIgMy4xMzAzNiAxNC42OTYxIDMuMTYzNDUgMTQuNzM5MUMzLjE5NjU0IDE0Ljc4MjEgMy4yNDAyNyAxNC44MTU3IDMuMjkwMzIgMTQuODM2N0w0LjkxMzIyIDE1LjQyMTdDNS4xNTg1MiAxNS41MTYxIDUuNDc5MzIgMTUuMzg0IDUuNDc5MzIgMTUuMTc2NEw1LjQ3OTE3IDEuNDE5NzZaIiBmaWxsPSIjMEU2NDc2Ii8+Cjwvc3ZnPgo=&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: initial; background-clip: initial; background-origin: initial; background-size: contain; background-blend-mode: initial; border: medium none; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: inline; position: absolute; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transition: initial; animation: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; -moz-appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: 1; box-shadow: initial; clip: initial; filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; visibility: visible; writing-mode: initial; text-orientation: initial; color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; -moz-context-properties: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; -moz-tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; -moz-control-character-visibility: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; scrollbar-color: initial; list-style: initial; quotes: initial; -moz-image-region: initial; margin: initial; scroll-margin: initial; outline: initial; -moz-outline-radius: initial; outline-offset: initial; padding: initial; scroll-padding: initial; top: 108px; right: initial; bottom: initial; left: 761px; z-index: auto; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: 16px; min-width: 16px; max-width: initial; height: 16px; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"></span></div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <div class="form-group">
+                <label for="your_message">Your Message</label>
+                <textarea class="form-control" rows="5" placeholder="Write Your Message"></textarea>
+                
+              </div>
+            </div>
+            <div class="col-sm-12 text-center margin-top-55 margin-bottom-55">
+              <button type="submit" class="btn btn-orange">Send Message</button>
+            </div>
+          </form>
+
+          <div class="text-center row">
+            <div class="col-sm-12">
+              <ul class="social-networks spin-icon">
+                <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
+                <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
+                <li><a href="https://pinterest.com/" class="icon-pinterest">Pinterest</a></li>
+                <li><a href="https://instagram.com/" class="icon-instagram">Instagram</a></li>
+              </ul>
+              <p class="text-center margin-top-30">
+               © Copyright 2017 <a href="#">REACT Portfolio Template </a> 
+             </p>
+           </div>
+         </div>
+       </section>
+     </div>
+   </section>
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="myModalLabel">Mojo Web App redesign concept</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some portfolio description here. Some portfolio description
+ here. Some portfolio description here. Some portfolio description here.
+ Some portfolio description here. Some portfolio description here. </p>
+          <img src="template_files/port1.jpg" class="img-responsive" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal end -->
+  <script src="template_files/main.js"></script>
+  <!-- Remove color switcher -->
+  <script>
+    $(document).ready(function() {
+      $('.palette-colors a').click(function(e) {
+        e.preventDefault();
+        var newCSSHref = $(this).attr('href');
+        $('#css-main').attr('href', newCSSHref);
+      });
+      // close the palette on click
+      $('.palette-toggle').click(function() {
+        $('.palette-wrapper').toggleClass('palette-closed');
+      });
+    });
+  </script>
+  <!-- Remove Color swither end -->
+
+
+</body></html>
